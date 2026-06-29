@@ -1,0 +1,57 @@
+{
+    "user": "mrj",
+    "dataset": "datasets/20240327_ta.json",
+    "gpt_params": {
+        "version": "gpt-4-0125-preview",
+        "temperature": 0.1,
+        "max_tokens": 3
+    },
+    "prompt": [
+        {
+            "role": "system",
+            "content": "I am a researcher for the FDA. I am searching through PubMed and identifying publications which contain pharmacokinetics parameters from women in pregnancy or in the perinatal stage. Specifically, I am looking for data that must satisfy three requirements. Requirement 1: The data must be from women in pregnancy, the perinatal stage, or from the fetus. Requirement 2: The data must be physiologically based pharmacokinetics (PBPK) parameters, such as Cmax, T1/2, or AUC. Requirement 3: The article must be a primary source, such as a research article, case study, or clinical trial. As in, the data should not be from a review article.\nYou will be provided the title and abstract for a PubMed publication in the following format:\n<TITLE>: This is the title. <ABSTRACT>: This is the abstract.\nYou will return a 1 if the publication contains the data I am looking for (which satisfies my three requirements) in the abstract. You will also return as 1 if the title and abstract suggest that the publication will contain the data I am looking for (which satisfies my three requirements) in other sections of the publication, such as the results. You will return a 0 otherwise, meaning there is no data I am looking for in the publication. Return only a 0 or 1."
+        }
+    ],
+    "prompt_file": "prompts/1.txt",
+    "balanced": true,
+    "n_articles": 6,
+    "estimated_cost": 0.04225,
+    "results": [
+        {
+            "pmid": "8623970",
+            "has_pk_data": false,
+            "gpt_response": "0",
+            "gpt_pred": false
+        },
+        {
+            "pmid": "23372761",
+            "has_pk_data": false,
+            "gpt_response": "1",
+            "gpt_pred": true
+        },
+        {
+            "pmid": "33476577",
+            "has_pk_data": false,
+            "gpt_response": "0",
+            "gpt_pred": false
+        },
+        {
+            "pmid": "19032729",
+            "has_pk_data": true,
+            "gpt_response": "1",
+            "gpt_pred": true
+        },
+        {
+            "pmid": "12932617",
+            "has_pk_data": true,
+            "gpt_response": "1",
+            "gpt_pred": true
+        },
+        {
+            "pmid": "28687146",
+            "has_pk_data": true,
+            "gpt_response": "1",
+            "gpt_pred": true
+        }
+    ]
+}

@@ -1,0 +1,42 @@
+Set up (only need to do first time):
+1. Accept OpenAI email invite to join pregnancypkdb team/organization
+	- if you prefer to use another email or the code expired, let me know and I can invite you again
+	- This will probably require you to create an OpenAI account
+
+2. Create API key linked to organization and add to your API key file
+	- On left side menu, select "API keys"
+	- "Create new secret key"
+		- Name: not important, for your own record keeping if you plan to have multiple keys
+	- Copy and paste key to chatgpt_api_key.txt file in "user_data" folder
+	- Change "Default Organization" from "Personal" to "pregnancypkdb"
+- Note: if you ever want to return to this page to create other API keys (if you've lost your previous one) or assess your usage, go to "platform.openai.com/api-keys"
+
+3. Add initials to "initials.txt" file in "user_data" folder
+	- Simply something like "ec", "kf", "mrj", etc.
+
+4. Install required python libraries
+	- In your folders, navigate to where you saved the test_gpt_prompts folder
+	- Enter folder "pkdb"
+	- Left click once on the top bar showing your current path to the pkdb folder; should turn blue
+	- Type "cmd" and Enter; should bring up command prompt window
+	- Type "pip install -r requirements.txt", Enter
+		- wait until it completes task, you will know because it will allow you to write things again
+	- Close command prompt window
+
+Run codes:
+- Two codes:
+	- test_prompt_on_dataset.py: allows you to select a prompt file and run a study/test it in on the dataset.
+	- summary_of_results.py: gives summary of performance for each of the studies (precision, recall, F1-score)
+
+1. Double click on code you want to run (python should be the default way these files are opened)
+	- Should be fairly intuitive to use
+	- Once finished, press enter to exit
+	- If for any reason you want to exit code while its running, press Ctrl+C
+
+Note: if a black window that looks like python flashes open and immediately closes, or if the window closes unexpetedly during the code, it means an error occured. Let me know and we can troubleshoot.
+
+
+
+
+
+	

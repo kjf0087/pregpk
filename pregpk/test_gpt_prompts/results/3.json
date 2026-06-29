@@ -1,0 +1,621 @@
+{
+    "user": "mrj",
+    "dataset": "datasets/20240308_ta.json",
+    "gpt_params": {
+        "version": "gpt-4",
+        "temperature": 0.1,
+        "max_tokens": 3
+    },
+    "prompt": [
+        {
+            "role": "system",
+            "content": "I am a researcher for the FDA. I am searching through PubMed and identifying publications which contain pharmacokinetics parameters from women in pregnancy or in the perinatal stage. Specifically, I am looking for data that must satisfy three requirements. Requirement 1: The data must be from women in pregnancy, the perinatal stage, or from the fetus. Requirement 2: The data must be physiologically based pharmacokinetics (PBPK) parameters, such as Cmax, T1/2, or AUC. Requirement 3: The article must be a primary source, such as a research article, case study, or clinical trial. As in, the data should not be from a review article.\nYou will be provided the title and abstract for a PubMed publication in the following format:\n<TITLE>: This is the title. <ABSTRACT>: This is the abstract.\nYou will return a 1 if the publication contains the data I am looking for (which satisfies my three requirements) in the abstract. You will also return as 1 if the title and abstract suggest that the publication will contain the data I am looking for (which satisfies my three requirements) in other sections of the publication, such as the results. You will return a 0 otherwise, meaning there is no data I am looking for in the publication. Return only a 0 or 1."
+        }
+    ],
+    "prompt_file": "prompts/1.txt",
+    "balanced": true,
+    "n_articles": 100,
+    "estimated_cost": 1.9419000000000002,
+    "results": [
+        {
+            "pmid": "17822537",
+            "has_pk_data": false,
+            "gpt_response": "0",
+            "gpt_pred": false
+        },
+        {
+            "pmid": "31932629",
+            "has_pk_data": false,
+            "gpt_response": "0",
+            "gpt_pred": false
+        },
+        {
+            "pmid": "35532929",
+            "has_pk_data": false,
+            "gpt_response": "0",
+            "gpt_pred": false
+        },
+        {
+            "pmid": "9773402",
+            "has_pk_data": false,
+            "gpt_response": "0",
+            "gpt_pred": false
+        },
+        {
+            "pmid": "27916206",
+            "has_pk_data": false,
+            "gpt_response": "0",
+            "gpt_pred": false
+        },
+        {
+            "pmid": "7590247",
+            "has_pk_data": false,
+            "gpt_response": "0",
+            "gpt_pred": false
+        },
+        {
+            "pmid": "6300077",
+            "has_pk_data": false,
+            "gpt_response": "0",
+            "gpt_pred": false
+        },
+        {
+            "pmid": "30150209",
+            "has_pk_data": false,
+            "gpt_response": "0",
+            "gpt_pred": false
+        },
+        {
+            "pmid": "2025230",
+            "has_pk_data": false,
+            "gpt_response": "0",
+            "gpt_pred": false
+        },
+        {
+            "pmid": "11925405",
+            "has_pk_data": false,
+            "gpt_response": "1",
+            "gpt_pred": true
+        },
+        {
+            "pmid": "30255310",
+            "has_pk_data": false,
+            "gpt_response": "1",
+            "gpt_pred": true
+        },
+        {
+            "pmid": "8672313",
+            "has_pk_data": false,
+            "gpt_response": "1",
+            "gpt_pred": true
+        },
+        {
+            "pmid": "19921362",
+            "has_pk_data": false,
+            "gpt_response": "1",
+            "gpt_pred": true
+        },
+        {
+            "pmid": "2476222",
+            "has_pk_data": false,
+            "gpt_response": "0",
+            "gpt_pred": false
+        },
+        {
+            "pmid": "3482470",
+            "has_pk_data": false,
+            "gpt_response": "0",
+            "gpt_pred": false
+        },
+        {
+            "pmid": "1547554",
+            "has_pk_data": false,
+            "gpt_response": "0",
+            "gpt_pred": false
+        },
+        {
+            "pmid": "7669070",
+            "has_pk_data": false,
+            "gpt_response": "0",
+            "gpt_pred": false
+        },
+        {
+            "pmid": "23488833",
+            "has_pk_data": false,
+            "gpt_response": "0",
+            "gpt_pred": false
+        },
+        {
+            "pmid": "10510331",
+            "has_pk_data": false,
+            "gpt_response": "0",
+            "gpt_pred": false
+        },
+        {
+            "pmid": "28589614",
+            "has_pk_data": false,
+            "gpt_response": "1",
+            "gpt_pred": true
+        },
+        {
+            "pmid": "2999129",
+            "has_pk_data": false,
+            "gpt_response": "0",
+            "gpt_pred": false
+        },
+        {
+            "pmid": "26736671",
+            "has_pk_data": false,
+            "gpt_response": "0",
+            "gpt_pred": false
+        },
+        {
+            "pmid": "7238448",
+            "has_pk_data": false,
+            "gpt_response": "0",
+            "gpt_pred": false
+        },
+        {
+            "pmid": "23406269",
+            "has_pk_data": false,
+            "gpt_response": "1",
+            "gpt_pred": true
+        },
+        {
+            "pmid": "18355687",
+            "has_pk_data": false,
+            "gpt_response": "0",
+            "gpt_pred": false
+        },
+        {
+            "pmid": "12439514",
+            "has_pk_data": false,
+            "gpt_response": "0",
+            "gpt_pred": false
+        },
+        {
+            "pmid": "19705412",
+            "has_pk_data": false,
+            "gpt_response": "0",
+            "gpt_pred": false
+        },
+        {
+            "pmid": "12018409",
+            "has_pk_data": false,
+            "gpt_response": "0",
+            "gpt_pred": false
+        },
+        {
+            "pmid": "7126732",
+            "has_pk_data": false,
+            "gpt_response": "1",
+            "gpt_pred": true
+        },
+        {
+            "pmid": "2173954",
+            "has_pk_data": false,
+            "gpt_response": "0",
+            "gpt_pred": false
+        },
+        {
+            "pmid": "23505023",
+            "has_pk_data": false,
+            "gpt_response": "0",
+            "gpt_pred": false
+        },
+        {
+            "pmid": "8619834",
+            "has_pk_data": false,
+            "gpt_response": "0",
+            "gpt_pred": false
+        },
+        {
+            "pmid": "8941065",
+            "has_pk_data": false,
+            "gpt_response": "0",
+            "gpt_pred": false
+        },
+        {
+            "pmid": "7237142",
+            "has_pk_data": false,
+            "gpt_response": "0",
+            "gpt_pred": false
+        },
+        {
+            "pmid": "22814658",
+            "has_pk_data": false,
+            "gpt_response": "1",
+            "gpt_pred": true
+        },
+        {
+            "pmid": "33737911",
+            "has_pk_data": false,
+            "gpt_response": "0",
+            "gpt_pred": false
+        },
+        {
+            "pmid": "2573600",
+            "has_pk_data": false,
+            "gpt_response": "0",
+            "gpt_pred": false
+        },
+        {
+            "pmid": "21072353",
+            "has_pk_data": false,
+            "gpt_response": "0",
+            "gpt_pred": false
+        },
+        {
+            "pmid": "18485639",
+            "has_pk_data": false,
+            "gpt_response": "0",
+            "gpt_pred": false
+        },
+        {
+            "pmid": "31182538",
+            "has_pk_data": false,
+            "gpt_response": "1",
+            "gpt_pred": true
+        },
+        {
+            "pmid": "27450577",
+            "has_pk_data": false,
+            "gpt_response": "0",
+            "gpt_pred": false
+        },
+        {
+            "pmid": "8408064",
+            "has_pk_data": false,
+            "gpt_response": "0",
+            "gpt_pred": false
+        },
+        {
+            "pmid": "6854223",
+            "has_pk_data": false,
+            "gpt_response": "0",
+            "gpt_pred": false
+        },
+        {
+            "pmid": "9737725",
+            "has_pk_data": false,
+            "gpt_response": "1",
+            "gpt_pred": true
+        },
+        {
+            "pmid": "12236578",
+            "has_pk_data": false,
+            "gpt_response": "0",
+            "gpt_pred": false
+        },
+        {
+            "pmid": "28710808",
+            "has_pk_data": false,
+            "gpt_response": "1",
+            "gpt_pred": true
+        },
+        {
+            "pmid": "15642799",
+            "has_pk_data": false,
+            "gpt_response": "0",
+            "gpt_pred": false
+        },
+        {
+            "pmid": "26107655",
+            "has_pk_data": false,
+            "gpt_response": "0",
+            "gpt_pred": false
+        },
+        {
+            "pmid": "4031380",
+            "has_pk_data": false,
+            "gpt_response": "0",
+            "gpt_pred": false
+        },
+        {
+            "pmid": "6966433",
+            "has_pk_data": false,
+            "gpt_response": "0",
+            "gpt_pred": false
+        },
+        {
+            "pmid": "6815599",
+            "has_pk_data": true,
+            "gpt_response": "1",
+            "gpt_pred": true
+        },
+        {
+            "pmid": "26679247",
+            "has_pk_data": true,
+            "gpt_response": "1",
+            "gpt_pred": true
+        },
+        {
+            "pmid": "1923224",
+            "has_pk_data": true,
+            "gpt_response": "1",
+            "gpt_pred": true
+        },
+        {
+            "pmid": "22083071",
+            "has_pk_data": true,
+            "gpt_response": "1",
+            "gpt_pred": true
+        },
+        {
+            "pmid": "8885758",
+            "has_pk_data": true,
+            "gpt_response": "1",
+            "gpt_pred": true
+        },
+        {
+            "pmid": "2800990",
+            "has_pk_data": true,
+            "gpt_response": "1",
+            "gpt_pred": true
+        },
+        {
+            "pmid": "19195329",
+            "has_pk_data": true,
+            "gpt_response": "1",
+            "gpt_pred": true
+        },
+        {
+            "pmid": "3620288",
+            "has_pk_data": true,
+            "gpt_response": "1",
+            "gpt_pred": true
+        },
+        {
+            "pmid": "2485290",
+            "has_pk_data": true,
+            "gpt_response": "1",
+            "gpt_pred": true
+        },
+        {
+            "pmid": "8238120",
+            "has_pk_data": true,
+            "gpt_response": "1",
+            "gpt_pred": true
+        },
+        {
+            "pmid": "26654672",
+            "has_pk_data": true,
+            "gpt_response": "1",
+            "gpt_pred": true
+        },
+        {
+            "pmid": "28287001",
+            "has_pk_data": true,
+            "gpt_response": "1",
+            "gpt_pred": true
+        },
+        {
+            "pmid": "21179910",
+            "has_pk_data": true,
+            "gpt_response": "1",
+            "gpt_pred": true
+        },
+        {
+            "pmid": "8555731",
+            "has_pk_data": true,
+            "gpt_response": "1",
+            "gpt_pred": true
+        },
+        {
+            "pmid": "28042936",
+            "has_pk_data": true,
+            "gpt_response": "1",
+            "gpt_pred": true
+        },
+        {
+            "pmid": "7847529",
+            "has_pk_data": true,
+            "gpt_response": "1",
+            "gpt_pred": true
+        },
+        {
+            "pmid": "3337789",
+            "has_pk_data": true,
+            "gpt_response": "1",
+            "gpt_pred": true
+        },
+        {
+            "pmid": "33079627",
+            "has_pk_data": true,
+            "gpt_response": "1",
+            "gpt_pred": true
+        },
+        {
+            "pmid": "16511429",
+            "has_pk_data": true,
+            "gpt_response": "1",
+            "gpt_pred": true
+        },
+        {
+            "pmid": "12136066",
+            "has_pk_data": true,
+            "gpt_response": "1",
+            "gpt_pred": true
+        },
+        {
+            "pmid": "29943508",
+            "has_pk_data": true,
+            "gpt_response": "1",
+            "gpt_pred": true
+        },
+        {
+            "pmid": "9065134",
+            "has_pk_data": true,
+            "gpt_response": "1",
+            "gpt_pred": true
+        },
+        {
+            "pmid": "25162819",
+            "has_pk_data": true,
+            "gpt_response": "1",
+            "gpt_pred": true
+        },
+        {
+            "pmid": "10360857",
+            "has_pk_data": true,
+            "gpt_response": "1",
+            "gpt_pred": true
+        },
+        {
+            "pmid": "3439808",
+            "has_pk_data": true,
+            "gpt_response": "1",
+            "gpt_pred": true
+        },
+        {
+            "pmid": "29030361",
+            "has_pk_data": true,
+            "gpt_response": "1",
+            "gpt_pred": true
+        },
+        {
+            "pmid": "9690805",
+            "has_pk_data": true,
+            "gpt_response": "1",
+            "gpt_pred": true
+        },
+        {
+            "pmid": "26732683",
+            "has_pk_data": true,
+            "gpt_response": "1",
+            "gpt_pred": true
+        },
+        {
+            "pmid": "12694965",
+            "has_pk_data": true,
+            "gpt_response": "1",
+            "gpt_pred": true
+        },
+        {
+            "pmid": "26103528",
+            "has_pk_data": true,
+            "gpt_response": "1",
+            "gpt_pred": true
+        },
+        {
+            "pmid": "23917320",
+            "has_pk_data": true,
+            "gpt_response": "1",
+            "gpt_pred": true
+        },
+        {
+            "pmid": "37090",
+            "has_pk_data": true,
+            "gpt_response": "1",
+            "gpt_pred": true
+        },
+        {
+            "pmid": "15365654",
+            "has_pk_data": true,
+            "gpt_response": "1",
+            "gpt_pred": true
+        },
+        {
+            "pmid": "21947392",
+            "has_pk_data": true,
+            "gpt_response": "1",
+            "gpt_pred": true
+        },
+        {
+            "pmid": "12727706",
+            "has_pk_data": true,
+            "gpt_response": "1",
+            "gpt_pred": true
+        },
+        {
+            "pmid": "18025877",
+            "has_pk_data": true,
+            "gpt_response": "1",
+            "gpt_pred": true
+        },
+        {
+            "pmid": "2328193",
+            "has_pk_data": true,
+            "gpt_response": "1",
+            "gpt_pred": true
+        },
+        {
+            "pmid": "25162818",
+            "has_pk_data": true,
+            "gpt_response": "1",
+            "gpt_pred": true
+        },
+        {
+            "pmid": "24992294",
+            "has_pk_data": true,
+            "gpt_response": "1",
+            "gpt_pred": true
+        },
+        {
+            "pmid": "8527007",
+            "has_pk_data": true,
+            "gpt_response": "1",
+            "gpt_pred": true
+        },
+        {
+            "pmid": "29453075",
+            "has_pk_data": true,
+            "gpt_response": "1",
+            "gpt_pred": true
+        },
+        {
+            "pmid": "2031814",
+            "has_pk_data": true,
+            "gpt_response": "1",
+            "gpt_pred": true
+        },
+        {
+            "pmid": "8431018",
+            "has_pk_data": true,
+            "gpt_response": "1",
+            "gpt_pred": true
+        },
+        {
+            "pmid": "1955558",
+            "has_pk_data": true,
+            "gpt_response": "1",
+            "gpt_pred": true
+        },
+        {
+            "pmid": "34732682",
+            "has_pk_data": true,
+            "gpt_response": "1",
+            "gpt_pred": true
+        },
+        {
+            "pmid": "2603904",
+            "has_pk_data": true,
+            "gpt_response": "1",
+            "gpt_pred": true
+        },
+        {
+            "pmid": "14712468",
+            "has_pk_data": true,
+            "gpt_response": "1",
+            "gpt_pred": true
+        },
+        {
+            "pmid": "7432728",
+            "has_pk_data": true,
+            "gpt_response": "1",
+            "gpt_pred": true
+        },
+        {
+            "pmid": "28433607",
+            "has_pk_data": true,
+            "gpt_response": "1",
+            "gpt_pred": true
+        },
+        {
+            "pmid": "3942670",
+            "has_pk_data": true,
+            "gpt_response": "1",
+            "gpt_pred": true
+        }
+    ]
+}

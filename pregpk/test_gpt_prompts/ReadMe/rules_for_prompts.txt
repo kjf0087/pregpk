@@ -1,0 +1,4 @@
+1. Your prompts should require ChatGPT to start their responses with either a "1" or a "0", where a "1" means that it believes there IS data we are looking for in the article, and a "0" means there isn't.
+Note: In my example prompt, I told ChatGPT to ONLY return a 0 or a 1. That is not necessary. If you believe it could improve the prompt's performance if you asked ChatGPT to also return an explanation for its classification, or something else, that works as well. The only requirement is that its response STARTS with a 1 or a 0.
+
+2. Do not overwrite prompt files, especially if you have run a study on them. Even if you are only going to change a single word in the prompt, save it as a new version.
